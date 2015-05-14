@@ -1,17 +1,19 @@
 {
-  "name": "react-select",
-  "version": "0.4.9",
-  "description": "A Select control built with and for ReactJS",
-  "main": "lib/Select.js",
-  "author": "Jed Watson",
+  "name": "react-select-pinyin",
+  "version": "0.0.0",
+  "description": "A Select control in which pinyin can be used for searching, forked from JedWatson/react-select",
+  "main": "src/SelectPinyin.js",
+  "author": "xcatliu",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JedWatson/react-select.git"
+    "url": "https://github.com/xcatliu/react-select-pinyin.git"
   },
   "dependencies": {
     "classnames": "^2.1.1",
-    "react-input-autosize": "^0.4.3"
+    "pinyin": "^2.4.2",
+    "react-input-autosize": "^0.4.3",
+    "react-select": "^0.4.9"
   },
   "devDependencies": {
     "babel-eslint": "^3.1.1",
@@ -56,6 +58,7 @@
     "react",
     "react-component",
     "select",
+    "pinyin",
     "multiselect",
     "combobox",
     "input",
