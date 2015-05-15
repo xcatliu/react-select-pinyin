@@ -1,6 +1,6 @@
 {
   "name": "react-select-pinyin",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A Select control in which pinyin can be used for searching, forked from JedWatson/react-select",
   "main": "src/SelectPinyin.js",
   "author": "xcatliu",
