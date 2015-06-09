@@ -1,0 +1,46 @@
+{
+  "name": "react-select-pinyin",
+  "version": "0.4.0",
+  "description": "React 选择控件（支持拼音搜索）",
+  "main": "lib/SelectPinyin.js",
+  "scripts": {
+    "start": "node bin/start",
+    "build": "cp ./node_modules/react-select/dist/default.css ./lib/default.css && ./node_modules/.bin/jsx -x jsx --harmony --no-cache-dir ./src/ ./lib/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xcatliu/react-select-pinyin.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "select",
+    "pinyin",
+    "select-pinyin",
+    "react-select",
+    "react-pinyin",
+    "react-select-pinyin"
+  ],
+  "author": "xcatliu <xcatliu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xcatliu/react-select-pinyin/issues"
+  },
+  "homepage": "https://github.com/xcatliu/react-select-pinyin",
+  "dependencies": {
+    "pinyin": "^2.4.4",
+    "react": "^0.13.3",
+    "react-select": "^0.4.9"
+  },
+  "devDependencies": {
+    "babel-core": "^5.5.5",
+    "babel-loader": "^5.1.4",
+    "brfs": "^1.4.0",
+    "ecstatic": "^0.8.0",
+    "insert-css": "^0.2.0",
+    "react-tools": "^0.13.3",
+    "transform-loader": "^0.2.2",
+    "webpack": "^1.9.10"
+  }
+}
