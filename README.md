@@ -9,3 +9,28 @@ React Select Pinyin | React 选择控件（支持拼音搜索）
 - 支持输入声母匹配（如 bjs, bj, b 会匹配北京市）
 - 支持非开始位置的匹配（如 jingshi, ijins, eij 会匹配北京市）
 - **不**支持子串匹配（如 beishi **不会**匹配北京市）
+
+## Live Demo
+
+
+
+## 开发
+
+clone 之后，进入本项目，执行：
+
+```shell
+npm install
+npm start
+```
+
+打开 [http://localhost:8000](http://localhost:8000) 查看示例。
+
+编辑 `src` 进行开发。
+
+## 发布新版本流程
+
+1. 开发完之后，需要运行 `npm run build`，将 `src` 中的 `jsx` 编译成 `lib` 中的 `js`
+2. 执行 `npm version [<newversion> | major | minor | patch | prerelease | preminor | premajor ]`，升级版本号
+3. 执行 `git push --all` 提交到 [GitHub](https://github.com/xcatliu/react-select-pinyin)
+4. 执行 `npm publish` 提交到 [npmjs.com](https://www.npmjs.com/)
+5. 发布 gh-pages
