@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var ecstatic = require('ecstatic');
 var http = require('http');
-var webpackConfig = require('../webpack.config');
+var webpackConfig = require('./webpack.config');
 
 var compiler = webpack(webpackConfig);
 

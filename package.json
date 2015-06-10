@@ -4,7 +4,7 @@
   "description": "React 选择控件（支持拼音搜索）",
   "main": "lib/SelectPinyin.js",
   "scripts": {
-    "start": "node bin/start",
+    "start": "node worker.js",
     "prepublish": "cp ./node_modules/react-select/dist/default.css ./lib/default.css && ./node_modules/.bin/jsx -x jsx --harmony --no-cache-dir ./src/ ./lib/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
