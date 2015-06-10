@@ -1,7 +1,7 @@
 React 选择控件（支持拼音搜索）
 ===
 
-[JedWatson](https://github.com/JedWatson) 写的 [react-select] 挺好用的，但是不支持拼音搜索。
+[JedWatson](https://github.com/JedWatson) 写的 [react-select] 挺好用，但是不支持拼音搜索。
 
 [react-select-pinyin] 基于 [react-select] 开发，添加了如下特性：
 
@@ -18,7 +18,7 @@ React 选择控件（支持拼音搜索）
 
 ### CommonJS
 
-若你的项目是基于 CommonJS 风格的，则直接 require 使用即可，具体的 api 和 [react-select] 一样：
+若你的项目是基于 CommonJS 风格的，则直接 `require` 使用即可，具体的 api 和 [react-select] 一样：
 
 ```js
 var Select = require('react-select-pinyin');
@@ -46,7 +46,7 @@ function logChange(val) {
 
 暂不支持
 
-### 直接在 script 标签中引入
+### 直接在 `script` 标签中引入
 
 暂不支持
 
