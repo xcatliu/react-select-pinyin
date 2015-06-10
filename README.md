@@ -19,7 +19,7 @@ React 选择控件（支持拼音搜索）
 和 [react-select] 的使用方式一样：
 
 ```js
-var Select = require('react-select');
+var Select = require('react-select-pinyin');
 
 var options = [
   { value: '110100', label: '北京市' },
