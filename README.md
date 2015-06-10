@@ -57,7 +57,7 @@ npm start
 
 1. 执行 `npm run build`，将 `src` 中的 `jsx` 编译成 `lib` 中的 `js`
 2. 执行 `npm version [<newversion> | major | minor | patch | prerelease | preminor | premajor ]`，升级版本号
-3. 执行 `git push --all` 提交到 [GitHub](https://github.com/xcatliu/react-select-pinyin)
+3. 执行 `git push && git push --tags` 提交到 [GitHub](https://github.com/xcatliu/react-select-pinyin)
 4. 执行 `npm publish` 提交到 [npmjs.com](https://www.npmjs.com/)
 5. 更新 `public` 中的内容到 `gh-pages` 分支
 
