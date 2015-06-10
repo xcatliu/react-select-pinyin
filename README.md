@@ -16,7 +16,9 @@ React 选择控件（支持拼音搜索）
 
 ## 使用方式
 
-和 [react-select] 的使用方式一样：
+### CommonJS
+
+若你的项目是基于 CommonJS 风格的，则直接 require 使用即可，具体的 api 和 [react-select] 一样：
 
 ```js
 var Select = require('react-select-pinyin');
@@ -37,6 +39,16 @@ function logChange(val) {
   onChange={logChange}
 />
 ```
+
+默认的 css 在 `dist/default.css` 中，请按照你项目中插入 css 的方式自行取用。
+
+### AMD
+
+暂不支持
+
+### 直接在 script 标签中引入
+
+暂不支持
 
 更多使用方式请参考：[react-select#usage](https://github.com/JedWatson/react-select#usage)
 
