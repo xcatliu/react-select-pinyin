@@ -1,6 +1,6 @@
 {
   "name": "react-select-pinyin",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "React 选择控件（支持拼音搜索）",
   "main": "lib/SelectPinyin.js",
   "scripts": {
