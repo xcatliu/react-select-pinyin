@@ -5,7 +5,7 @@
   "main": "lib/SelectPinyin.js",
   "scripts": {
     "start": "node bin/start",
-    "build": "cp ./node_modules/react-select/dist/default.css ./lib/default.css && ./node_modules/.bin/jsx -x jsx --harmony --no-cache-dir ./src/ ./lib/",
+    "build": "cp ./node_modules/react-select/dist/default.css ./dist/default.css && ./node_modules/.bin/jsx -x jsx --harmony --no-cache-dir ./src/ ./lib/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
