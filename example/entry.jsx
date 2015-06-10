@@ -4,7 +4,7 @@ var options = require('./options');
 
 var fs = require('fs');
 var path = require('path');
-var css = fs.readFileSync(path.resolve(__dirname, '../dist/default.css'), {encoding:'utf8'});
+var css = fs.readFileSync(path.resolve(__dirname, '../lib/default.css'), {encoding:'utf8'});
 var insertCss = require('insert-css');
 
 var styles = {

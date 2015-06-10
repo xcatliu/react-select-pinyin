@@ -40,7 +40,7 @@ function logChange(val) {
 />
 ```
 
-默认的 css 在 `dist/default.css` 中，请按照你项目中插入 css 的方式自行取用。
+默认的 css 在 `lib/default.css` 中，请按照你项目中插入 css 的方式自行取用。
 
 ### AMD
 
@@ -49,6 +49,8 @@ function logChange(val) {
 ### 直接在 `script` 标签中引入
 
 暂不支持
+
+### 更多使用方式
 
 更多使用方式请参考：[react-select#usage](https://github.com/JedWatson/react-select#usage)
 
@@ -67,12 +69,11 @@ npm start
 
 ## 发布新版本流程
 
-1. 执行 `npm run build`，将 `src` 中的 `jsx` 编译成 `lib` 中的 `js`
+1. 执行 `npm run prepublish`，将 `src` 中的 `jsx` 编译成 `lib` 中的 `js`，并且复制 `react-select` 中的 css 到 `lib`
 2. 执行 `npm version [<newversion> | major | minor | patch | prerelease | preminor | premajor ]`，升级版本号
 3. 执行 `git push && git push --tags` 提交到 [GitHub](https://github.com/xcatliu/react-select-pinyin)
-4. 执行 `npm publish` 提交到 [npmjs.com](https://www.npmjs.com/)
+4. 执行 `npm publish` 发布到 [npmjs.com](https://www.npmjs.com/)
 5. 更新 `public` 中的内容到 `gh-pages` 分支
 
 [react-select]: https://github.com/JedWatson/react-select
 [react-select-pinyin]: https://github.com/xcatliu/react-select-pinyin
-
