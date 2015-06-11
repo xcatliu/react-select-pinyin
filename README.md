@@ -1,7 +1,7 @@
 React 选择控件（支持拼音搜索）
 ===
 
-[JedWatson](https://github.com/JedWatson) 写的 [react-select] 挺好用，但是不支持拼音搜索。
+[JedWatson](https://github.com/JedWatson) 的 [react-select] 挺好用，但是不支持拼音搜索。
 
 [react-select-pinyin] 基于 [react-select] 开发，添加了如下特性：
 
@@ -65,15 +65,15 @@ npm start
 
 打开 [http://localhost:8000](http://localhost:8000) 查看示例。
 
-编辑 `src` 进行开发。
+编辑 `src` 和 `example` 进行开发。
 
 ## 发布新版本流程
 
-1. 执行 `npm run prepublish`，将 `src` 中的 `jsx` 编译成 `lib` 中的 `js`，并且复制 `react-select` 中的 css 到 `lib`
+1. 执行 `npm run prepublish`，将 `src` 中的 `jsx` 编译成 `lib` 中的 `js`，并且会复制 `react-select` 中的 css 到 `lib`
 2. 执行 `npm version [<newversion> | major | minor | patch | prerelease | preminor | premajor ]`，升级版本号
 3. 执行 `git push && git push --tags` 提交到 [GitHub](https://github.com/xcatliu/react-select-pinyin)
 4. 执行 `npm publish` 发布到 [npmjs.com](https://www.npmjs.com/)
-5. 更新 `public` 中的内容到 `gh-pages` 分支
+5. 更新 `gh-pages` 中的内容到 `gh-pages` 分支
 
 [react-select]: https://github.com/JedWatson/react-select
 [react-select-pinyin]: https://github.com/xcatliu/react-select-pinyin

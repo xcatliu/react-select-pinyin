@@ -1,3 +1,5 @@
+'use strict';
+
 var webpack = require('webpack');
 var ecstatic = require('ecstatic');
 var http = require('http');
@@ -10,21 +12,25 @@ compiler.watch({
 }, compileCallback);
 
 function compileCallback(err, stats) {
-  if (err) return handleError(err);
+  if (err) {
+    return handleError(err);
+  }
   var compilationErrors = stats.compilation.errors;
   if (compilationErrors.length > 0) {
-    compilationErrors.forEach(function(err) {
-      handleError(err.error);
+    compilationErrors.forEach(function(compilationError) {
+      handleError(compilationError.error);
     });
-    return;
+    return undefined;
   }
   console.log('Bundled successfully');
   startServerOnce();
 }
 
-var serverStarted = false
+var serverStarted = false;
 function startServerOnce() {
-  if (serverStarted) return;
+  if (serverStarted) {
+    return null;
+  }
   serverStarted = true;
   http.createServer(
     ecstatic({ root: webpackConfig.output.path })

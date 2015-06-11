@@ -1,18 +1,21 @@
+'use strict';
+
 var React = require('react');
 var Select = require('../src/SelectPinyin.jsx');
-var options = require('./options');
+var options = require('./data').options;
 
 var fs = require('fs');
 var path = require('path');
-var css = fs.readFileSync(path.resolve(__dirname, '../lib/default.css'), {encoding:'utf8'});
+var css = fs.readFileSync(path.resolve(__dirname, '../lib/default.css'), {encoding: 'utf8'});
 var insertCss = require('insert-css');
 
 var styles = {
   container: {
-    width: '600px',
+    maxWidth: '500px',
+    padding: '1em',
     margin: '0 auto'
   }
-}
+};
 
 var App = React.createClass({
   componentWillMount: function() {
@@ -27,7 +30,7 @@ var App = React.createClass({
     return (
       <div style={styles.container}>
         <h1>React 选择控件（支持拼音搜索）</h1>
-        <p><a href="https://github.com/JedWatson">JedWatson</a> 写的 <a href="https://github.com/JedWatson/react-select">react-select</a> 挺好用，但是不支持拼音搜索。</p>
+        <p><a href="https://github.com/JedWatson">JedWatson</a> 的 <a href="https://github.com/JedWatson/react-select">react-select</a> 挺好用，但是不支持拼音搜索。</p>
         <p><a href="https://github.com/xcatliu/react-select-pinyin">react-select-pinyin</a> 基于 <a href="https://github.com/JedWatson/react-select">react-select</a> 开发，添加了如下特性：</p>
         <ul>
           <li>支持输入全拼匹配（如 beijingshi, beijing, beij, b 会匹配北京市）</li>

@@ -1,8 +1,12 @@
+'use strict';
+
+var path = require('path');
+
 module.exports = {
-  context: __dirname + '/example',
+  context: path.resolve(__dirname, 'example'),
   entry: './index.jsx',
   output: {
-    path: __dirname + '/public',
+    path: path.resolve(__dirname, 'gh-pages'),
     filename: 'bundle.js'
   },
   module: {
