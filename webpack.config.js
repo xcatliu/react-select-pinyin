@@ -1,12 +1,18 @@
 'use strict';
 
 var path = require('path');
+var webpack = require('webpack');
+var examplePath = path.resolve(__dirname, 'example');
 
 module.exports = {
-  context: path.resolve(__dirname, 'example'),
-  entry: './index.jsx',
+  context: examplePath,
+  entry: [
+    'webpack-dev-server/client?http://localhost:8000',
+    'webpack/hot/only-dev-server',
+    './index.jsx'
+  ],
   output: {
-    path: path.resolve(__dirname, 'gh-pages'),
+    path: examplePath,
     filename: 'bundle.js'
   },
   module: {
@@ -19,11 +25,22 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader'
+        loaders: ['react-hot', 'babel-loader']
       }
     ]
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ],
+  devServer: {
+    contentBase: examplePath,
+    publicPath: '',
+    hot: true,
+    historyApiFallback: true,
+    port: 8000
   }
 };
