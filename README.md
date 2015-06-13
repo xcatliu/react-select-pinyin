@@ -1,5 +1,9 @@
-React 选择控件（支持拼音搜索）[![Build Status](https://travis-ci.org/xcatliu/react-select-pinyin.svg?branch=master)](https://travis-ci.org/xcatliu/react-select-pinyin)
+React 选择控件（支持拼音搜索）
 ===
+
+[![Build Status](https://travis-ci.org/xcatliu/react-select-pinyin.svg?branch=master)](https://travis-ci.org/xcatliu/react-select-pinyin)
+
+---
 
 [JedWatson](https://github.com/JedWatson) 的 [react-select] 挺好用，但是不支持拼音搜索。
 
@@ -69,11 +73,12 @@ npm start
 
 ## 发布新版本流程
 
-1. 执行 `npm run prepublish`，将 `src` 中的 `jsx` 编译成 `lib` 中的 `js`，并且会复制 `react-select` 中的 css 到 `lib`
-2. 执行 `npm version [<newversion> | major | minor | patch | prerelease | preminor | premajor ]`，升级版本号
-3. 执行 `git push && git push --tags` 提交到 [GitHub](https://github.com/xcatliu/react-select-pinyin)
-4. 执行 `npm publish` 发布到 [npmjs.com](https://www.npmjs.com/)
-5. 更新 `gh-pages` 中的内容到 `gh-pages` 分支
+1. 执行 `npm run lint` 执行 eslint 检查
+2. 执行 `npm run prepublish` 将 `src` 中的 `jsx` 编译成 `lib` 中的 `js`，并且会复制 `react-select` 中的 css 到 `lib`
+3. 执行 `npm version [<newversion> | major | minor | patch | prerelease | preminor | premajor ]` 升级版本号
+4. 执行 `git push && git push --tags` 提交到 [GitHub](https://github.com/xcatliu/react-select-pinyin)
+5. 执行 `npm publish` 发布到 [npmjs.com](https://www.npmjs.com/)
+6. 执行 `npm run gh-pages` 更新 `gh-pages` 分支
 
 [react-select]: https://github.com/JedWatson/react-select
 [react-select-pinyin]: https://github.com/xcatliu/react-select-pinyin

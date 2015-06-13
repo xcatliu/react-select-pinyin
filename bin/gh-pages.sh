@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-webpack -p --config webpack-production.config.js
+./node_modules/.bin/webpack -p --config webpack-production.config.js
 
 git checkout gh-pages
 git checkout master ./example/index.html
@@ -14,4 +14,3 @@ git push origin gh-pages:gh-pages
 git checkout master
 
 exit 0
-
