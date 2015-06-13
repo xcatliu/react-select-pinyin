@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node worker.js",
     "prepublish": "cp ./node_modules/react-select/dist/default.css ./lib/default.css && ./node_modules/.bin/jsx -x jsx --harmony --no-cache-dir ./src/ ./lib/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -47,8 +48,19 @@
     "eslint": "^0.22.1",
     "eslint-plugin-react": "^2.5.0",
     "insert-css": "^0.2.0",
+    "jest": "^0.1.40",
+    "jest-cli": "^0.4.12",
     "react-tools": "^0.13.3",
     "transform-loader": "^0.2.2",
     "webpack": "^1.9.10"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-select",
+      "<rootDir>/node_modules/pinyin",
+      "<rootDir>/node_modules/xtend"
+    ]
   }
 }
