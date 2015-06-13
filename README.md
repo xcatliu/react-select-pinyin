@@ -1,9 +1,8 @@
 React 选择控件（支持拼音搜索）
 ===
 
+[![npm version](https://badge.fury.io/js/react-select-pinyin.png)](http://badge.fury.io/js/react-select-pinyin)
 [![Build Status](https://travis-ci.org/xcatliu/react-select-pinyin.svg?branch=master)](https://travis-ci.org/xcatliu/react-select-pinyin)
-
----
 
 [JedWatson](https://github.com/JedWatson) 的 [react-select] 挺好用，但是不支持拼音搜索。
 
